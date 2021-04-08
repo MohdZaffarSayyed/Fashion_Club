@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arvo', serif;
+    background-color: slategray;
+}
+
+.box {
+    padding: 90px 10px;
+    padding-bottom: 40px;
+}
+
+.col1 {
+    padding: 50px 50px 50px 50px;
+    background-color: thistle;
+    float: left;
+}
+
+.col2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 10px;
+    height: 600px;
+    width: 400px;
+    background-color: rgb(205, 164, 209);
+    float: right;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.explode {
+    display: inline-block;
+    background: rgb(55, 13, 97);
+    color: rgb(214, 164, 164);
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 20px;
+    transition: background 0.5s;
+}
+
+.explode:hover {
+    background-color: rgb(17, 113, 202);
+}
