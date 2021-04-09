@@ -38,7 +38,7 @@ session_destroy();
                <li><a href="#aboutus">ABOUT</a></li>
                <li><a href="contact.php?username=<?PHP echo $uname?>">CONTACT</a></li>
                <li><a href="regestration.php">ACCOUNT</a></li>
-               <li><a href="http://localhost/WordGame/mainpage.php">PLAY GAME</a></li>
+               <li><a href="https://puzzle-out.herokuapp.com/">PLAY GAME</a></li>
 
            </ul>
            <img src="images/cart.png" width="30px" height="30px">
