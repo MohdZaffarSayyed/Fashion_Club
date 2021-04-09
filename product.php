@@ -334,7 +334,7 @@ if($uname==null){
                 <p><?PHP echo "₹";echo $row15["price"];echo "/-";?></p>
                 <div class="explode"style="background:red"><a href="pdisplay.php?id=<?PHP echo $row15['id']?>&username=<?PHP echo $uname?>">BUY</a></div>
             </div>
-            <div class="col-4">
+           <div class="col-4">
             <img src="<?PHP echo $row16["image"]?>" height="380px" alt="">
             <h4><?PHP echo $row16["pname"];?></h4>
                 <div class="rating">
