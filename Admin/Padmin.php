@@ -13,8 +13,13 @@
 <body>
 <?php
 if(isset($_POST['submitDeleteBtn'])){
-    $connection=mysqli_connect("localhost","root","");
-    $db=mysqli_select_db($connection,"fashion_club");
+    // $connection=mysqli_connect("localhost","root","");
+    // $db=mysqli_select_db($connection,"fashion_club");
+    $host='remotemysql.com';
+    $db='ZORcCQymx8';
+    $user='ZORcCQymx8';
+    $pass='LNtX4rX8wB';
+    $connection=mysqli_connect($host,$user,$pass,$db);
     $key=$_POST['KeyToDelete'];
 
     $check=mysqli_query($connection,"select * from products where id=$key") or die("not found".mysqli_error($connection));
@@ -39,8 +44,13 @@ if(isset($_POST['submitDeleteBtn'])){
         </thead>
 
     <?PHP
-    $connection=mysqli_connect("localhost","root","");
-    $db=mysqli_select_db($connection,"fashion_club");
+    // $connection=mysqli_connect("localhost","root","");
+    // $db=mysqli_select_db($connection,"fashion_club");
+    $host='remotemysql.com';
+    $db='ZORcCQymx8';
+    $user='ZORcCQymx8';
+    $pass='LNtX4rX8wB';
+    $connection=mysqli_connect($host,$user,$pass,$db);
 
     ?>
     <?PHP

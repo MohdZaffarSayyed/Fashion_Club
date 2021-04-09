@@ -33,7 +33,7 @@ session_destroy();
        </div>
        <nav>
            <ul>
-               <li><a href="main.php">HOME</a></li>
+               <li><a href="index.php">HOME</a></li>
                <li><a href="product.php?username=<?PHP echo $uname?>">PRODUCT</a></li>
                <li><a href="#aboutus">ABOUT</a></li>
                <li><a href="contact.php?username=<?PHP echo $uname?>">CONTACT</a></li>
@@ -94,8 +94,15 @@ session_destroy();
     </div>
     
     <?PHP
-    $connection=mysqli_connect("localhost","root","");
-    $db=mysqli_select_db($connection,"fashion_club");
+    // $connection=mysqli_connect("localhost","root","");
+    // $db=mysqli_select_db($connection,"fashion_club");
+    $host='remotemysql.com';
+    $db='ZORcCQymx8';
+    //$db=mysqli_select_db($connection,"ZORcCQymx8");
+    $user='ZORcCQymx8';
+    $pass='LNtX4rX8wB';
+    $connection=mysqli_connect($host,$user,$pass,$db);
+  
 
     ?>
     

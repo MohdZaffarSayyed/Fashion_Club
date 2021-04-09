@@ -16,8 +16,13 @@ if($uname==null){
 </head>
 <body>
 <?php
-$connection=mysqli_connect("localhost","root","");
-$db=mysqli_select_db($connection,"fashion_club");
+// $connection=mysqli_connect("localhost","root","");
+// $db=mysqli_select_db($connection,"fashion_club");
+$host='remotemysql.com';
+$db='ZORcCQymx8';
+$user='ZORcCQymx8';
+$pass='LNtX4rX8wB';
+$connection=mysqli_connect($host,$user,$pass,$db);
 
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
       $doubt=$_POST['doubt'];

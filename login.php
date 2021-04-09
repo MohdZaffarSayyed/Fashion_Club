@@ -14,8 +14,13 @@ SESSION_START();
 <body>
  <?php
  error_reporting(0);
-$connection=mysqli_connect("localhost","root","");
-$db=mysqli_select_db($connection,"fashion_club");
+// $connection=mysqli_connect("localhost","root","");
+// $db=mysqli_select_db($connection,"fashion_club");
+$host='remotemysql.com';
+$db='ZORcCQymx8';
+$user='ZORcCQymx8';
+$pass='LNtX4rX8wB';
+$connection=mysqli_connect($host,$user,$pass,$db);
 
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
       $username = $_POST['username'];
@@ -34,7 +39,7 @@ $db=mysqli_select_db($connection,"fashion_club");
             if($row!=null){
                 echo " You Have Successfully Logged in";
                 $_SESSION['user_name']=$username;
-                header('Location: main.php');
+                header('Location: index.php');
             
             }
             else{
