@@ -8,7 +8,7 @@ if($uname==""){
 // else{
 //     echo $uname;
 // }
-session_destroy();
+//session_destroy();
 
 
 ?> 
