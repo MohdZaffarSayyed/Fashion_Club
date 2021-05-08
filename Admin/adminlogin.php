@@ -50,6 +50,7 @@ $connection=mysqli_connect($host,$user,$pass,$db);
      
        
     }
+    SESSION_DESTROY();
     mysqli_close($connection);
  
 ?> 
