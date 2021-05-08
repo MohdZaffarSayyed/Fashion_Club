@@ -1,6 +1,6 @@
 <?php
 SESSION_START();
-SESSION_DESTROY();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
